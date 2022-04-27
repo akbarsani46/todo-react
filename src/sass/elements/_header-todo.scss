@@ -1,0 +1,25 @@
+.header--todo {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 20vh;
+    @include flex(center, center, column);
+
+    .header--todo--logo {
+        height: 10vh;
+        animation: header-todo-animation 6s linear infinite;
+        transition: transform 0.3s linear;
+    }
+
+    .header--todo-title {
+        color: #5fd8f9;
+    }
+}
+
+@keyframes header-todo-animation {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,17 @@
+.todo--item {
+    min-width: 20rem;
+    box-shadow: $shadow;
+    margin-top: 1rem;
+    @include flex(space-between, center);
+
+    .todo--text {
+        padding: 0 1rem;
+    }
+    .button--group {
+        @include flex(none, center);
+
+        button {
+            box-shadow: none;
+        }
+    }
+}

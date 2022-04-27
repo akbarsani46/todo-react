@@ -1,0 +1,17 @@
+button {
+    min-height: 3rem;
+    min-width: 3rem;
+    background: $blue;
+    // border-radius: 0.3rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: $shadow;
+    color: aliceblue;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: darken($color: $blue, $amount: 10);
+    }
+}

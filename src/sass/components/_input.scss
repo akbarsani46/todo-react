@@ -1,0 +1,13 @@
+input {
+    height: 3rem;
+    min-width: 30rem;
+    outline: none;
+    box-shadow: $shadow;
+    border: none;
+    padding: 0 1rem;
+    transition: all 0.3s ease;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+    border: 2px solid $blue;
+    font-family: poppins;
+}

@@ -1,0 +1,4 @@
+.input--todo {
+    min-height: 10vh;
+    @include flex(center, center);
+}
