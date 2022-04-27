@@ -23,6 +23,8 @@ const App = () => {
     }
 
     const handleTodo = () => {
+        if (todoValue === "") return console.error("Todo Cannot Be Empty")
+
         const todoItem = {
             id: todos.length + 1,
             content: todoValue,
@@ -41,8 +43,6 @@ const App = () => {
     }
 
     const handleDone = (event) => {
-        console.log(event.target.id)
-
         const changeStatus = todos.map((todo) => {
             if (event.target.id === todo.id.toString()) {
                 return {

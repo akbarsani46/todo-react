@@ -3,15 +3,18 @@ import Button from "../components/Button"
 
 const InputTodo = ({ handleTodoValue, handleTodo, todoValue }) => {
     return (
-        <div className="input--todo">
+        <form
+            className="input--todo"
+            onSubmit={(event) => event.preventDefault()}
+        >
             <Input
                 onChange={handleTodoValue}
                 placeholder="Enter your activity"
                 value={todoValue}
             />
 
-            <Button content="+" onClick={handleTodo} />
-        </div>
+            <Button content="+" onClick={handleTodo} onSubmit={handleTodo} />
+        </form>
     )
 }
 

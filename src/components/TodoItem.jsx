@@ -1,11 +1,7 @@
-import { useEffect } from "react"
+// import { useEffect } from "react"
 import Button from "./Button"
 
 const TodoItem = ({ content, id, isDone, handleDone, handleRemove }) => {
-    useEffect(() => {
-        console.log("change")
-    }, [isDone])
-
     return (
         <div className="todo--item">
             <p
